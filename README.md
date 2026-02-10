@@ -50,6 +50,7 @@ We need engineers, designers, and fellow users to help populate this data.
 Building a safe, medical-grade alternative requires expensive hardware validation. I am purchasing used HeartMate 3 controllers for destructive testing and hiring professional engineers for 3D scanning and safety checks.
 
 **If you want to speed up development, you can contribute directly to the R&D fund:**
+
 [![Donate with Square](https://img.shields.io/badge/Donate-Square-3E43BA?style=for-the-badge&logo=square&logoColor=white)](https://square.link/u/YXz3dqBN)
 
 ## ⚖️ Disclaimer
