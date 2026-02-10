@@ -41,8 +41,7 @@ We are currently gathering data on the following components. **Check the [Issues
 
 ## 🤝 How to Contribute
 We need engineers, designers, and fellow users to help populate this data.
-* **Have a dead battery?** We need photos of the internal PCB.
-* **Know the connector?** Post in the Issues tab.
+* **Have a dead battery or old LVAD equipment?** Message me and I'll give you an address to send it.
 * **Have 3D scanning gear?** We need scans of everything.
 
 ## 🤝 Support the Research
