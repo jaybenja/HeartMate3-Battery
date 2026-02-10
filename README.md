@@ -43,7 +43,14 @@ We are currently gathering data on the following components. **Check the [Issues
 We need engineers, designers, and fellow users to help populate this data.
 * **Have a dead battery?** We need photos of the internal PCB.
 * **Know the connector?** Post in the Issues tab.
-* **Have 3D scanning gear?** We need a scan of the battery clip interface.
+* **Have 3D scanning gear?** We need scans of everything.
+
+## 🤝 Support the Research
+**I am self-funding this project to help my mother and other patients.**
+Building a safe, medical-grade alternative requires expensive hardware validation. I am purchasing used HeartMate 3 controllers for destructive testing and hiring professional engineers for 3D scanning and safety checks.
+
+**If you want to speed up development, you can contribute directly to the R&D fund:**
+[![Donate with Square](https://img.shields.io/badge/Donate-Square-3E43BA?style=for-the-badge&logo=square&logoColor=white)](https://square.link/u/YXz3dqBN)
 
 ## ⚖️ Disclaimer
 This is a research project, not a product. The maintainers are not affiliated with Abbott Laboratories. All trademarks belong to their respective owners.
