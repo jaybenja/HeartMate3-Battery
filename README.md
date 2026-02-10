@@ -1,38 +1,49 @@
-# Open Source HeartMate 3 Battery Project
+# Open Source HeartMate 3 Battery Research
 
-> **⚠️ CRITICAL SAFETY WARNING**
-> * **DO NOT** use this project for primary life support without clinical oversight.
-> * **DO NOT** attempt to charge these custom packs in the official Abbott Universal Battery Charger. It poses a fire risk.
-> * **DO NOT** modify the System Controller or internal backup battery.
-> * *This repository documents a personal research project to create a user-serviceable alternative to the official 14.4V battery clips.*
+> **⚠️ SAFETY NOTICE: RESEARCH ONLY**
+> * This repository documents a **work-in-progress investigation**.
+> * There is **no working prototype** yet.
+> * **DO NOT** attempt to power medical equipment with experimental hardware.
+> * We are currently in the **Reverse Engineering & Data Collection** phase.
 
 ---
 
-## 🎯 Project Goal
-To design and build a **safe, reliable, and cost-effective** external battery pack for the HeartMate 3 Left Ventricular Assist Device (LVAD). This project aims to solve two common failures of the OEM system:
-1.  **Clip Melting:** Replacing worn proprietary contacts with fresh, high-current connectors.
-2.  **Charger Reliability:** Enabling the use of standard, smart lithium chargers to prevent thermal stress on batteries.
-3.  **Form Factor:** Creating a smaller, lighter solution to improve patient mobility.
+## ❓ The Problem
+The current external power system for the HeartMate 3 LVAD relies on proprietary, sealed lead-acid or older Li-ion technology. Users face several challenges:
+1.  **Connector Wear:** The battery clips frequently melt or fail at the connection point.
+2.  **Form Factor:** The existing batteries are heavy and bulky.
+3.  **Charger Lock-in:** The proprietary charger is the only way to recharge, creating a single point of failure.
 
-## 🛠️ Bill of Materials (BOM)
+## 🎯 The Goal
+To collaboratively research, document, and design a **modern, open-specification** external battery alternative that is:
+* **Lighter:** Using modern high-density Lithium cells (21700 standard).
+* **Repairable:** Using off-the-shelf connectors and standard chargers.
+* **Transparent:** Documenting the pinout and communication protocols so users understand their own equipment.
 
-| Component | Recommendation | Notes |
-| :--- | :--- | :--- |
-| **Cells** | **Samsung 50E** (21700 Li-Ion) | Must be genuine Grade A. High capacity (5000mAh) and stable chemistry. |
-| **Case** | Solderless 4S 21700 Enclosure | Custom 3D print or modified generic case. |
-| **BMS** | Passive Balance Lead (5-pin) | Allows individual cell monitoring for safety. |
-| **Connector** | Custom 5-Pin Blade | *Currently Reverse Engineering.* |
-| **Charger** | Smart Li-Ion Charger | Must support independent channel charging (e.g., XTAR VC4SL). |
+## 🚧 Current Research Status
+We are currently gathering data on the following components. **Check the [Issues] tab to contribute data.**
 
-## ⚙️ Technical Specifications
-* **Nominal Voltage:** 14.4V (4S Configuration)
-* **Capacity:** ~5000mAh (72Wh)
-* **Max Continuous Discharge:** ~9.8A (Safety margin well above HM3 peak load)
+### 1. The Connector
+* **Status:** *Unidentified.*
+* **Goal:** Determine the manufacturer and part number of the 5-pin blade connector.
+* **Action:** [Help us identify this part in Issue #1]
 
-## 📝 Status
-* [ ] **Phase 1: Research** - Reverse engineering the connector and voltage protocols.
-* [ ] **Phase 2: Design** - Modeling the 4S enclosure and connector interface.
-* [ ] **Phase 3: Testing** - Load testing with simulated 3W-10W fluid pump loads.
+### 2. The Cells
+* **Status:** *Evaluating candidates.*
+* **Goal:** Select 21700 cells that match or exceed the specific discharge curve of the OEM battery.
+* **Requirements:** High capacity (>4500mAh) and stable voltage under load.
 
-## ⚖️ Liability Disclaimer
-This hardware design is **experimental**. The authors accept **no liability** for device failure, medical complications, or damage to equipment. By using this information, you agree to assume all risks associated with modifying medical power systems.
+### 3. The Communication Protocol
+* **Status:** *Unknown.*
+* **Goal:** Determine if the "Smart" pins use SMBus, I2C, or simple voltage sensing.
+
+---
+
+## 🤝 How to Contribute
+We need engineers, designers, and fellow users to help populate this data.
+* **Have a dead battery?** We need photos of the internal PCB.
+* **Know the connector?** Post in the Issues tab.
+* **Have 3D scanning gear?** We need a scan of the battery clip interface.
+
+## ⚖️ Disclaimer
+This is a research project, not a product. The maintainers are not affiliated with Abbott Laboratories. All trademarks belong to their respective owners.
